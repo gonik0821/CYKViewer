@@ -54,7 +54,7 @@ namespace CYKViewer
             CoreWebView2Environment env = CoreWebView2Environment.CreateAsync(null, userDataFolder, options).Result; // Oh, the joys of .Result!
             webView.EnsureCoreWebView2Async(env);
 
-            webView.Source = new Uri("https://shinycolors.enza.fun");
+            webView.Source = new Uri("https://shinycolors.enza.fun/home");
 
             _statusBarTimer.Elapsed += StatusBarContentExpired;
 
